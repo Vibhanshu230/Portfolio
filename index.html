@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibhanshu Botke</title>
+    <link rel="icon" type="image/jpg" href="Images/LOGO.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cd67487056.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/hero_logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li>
+              <a
+                href="https://drive.google.com/file/d/1pBossN7JYck1Qmvgv_dgv_5lxVTFFeRw/view"
+                >Resume</a
+              >
+            </li> --> 
+            <i class="fa-solid fa-xmark mobile-icon" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars mobile-icon" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <div class="header-text-left">
+            <h1 style="color: #ff004f;">&lt;Coder&gt;</h1>
+            <pre>
+              <code id="code-output"></code><span class="cursor">|</span>
+            </pre>
+          </div>
+          <div class="header-text-right">
+            <p id="output-text" style="display: none; font-weight: bold; color: #b3b1b1;"></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!------------about-------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="Images/Web_Photo_Editor.jpg"
+              alt="About Image Mobile"
+              class="mobile-image"
+            />
+            <img
+              src="Images/Web_Photo_Editor.jpg"
+              alt="About Image Desktop"
+              class="desktop-image"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p style="text-align: justify">
+              I’m Vibhanshu Botke, a final-year Electrical Engineering student at NIT Surat, 
+              specializing in data science, software development, and programming languages 
+              such as Python, Java, and C. With a deep passion for technology and problem-solving, 
+              I’ve honed my skills in SQL, web development, and AI. Driven by curiosity and a desire 
+              to stay ahead of emerging trends, I continuously explore new domains within data science
+              and artificial intelligence. I’m eager to apply my diverse skill set to build innovative solutions 
+              that drive progress. Let’s collaborate and create impactful experiences together.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('internship')">Internship</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Languages</span><br />Python, Java, SQL, JavaScript, C, MATLAB, LaTeX</li>
+                <li>
+                  <span>Computer Fundamentals</span><br />Data Structures and
+                  Algorithms, DBMS, Operating Systems (OS), System Design
+                </li>
+                <li>
+                  <span>Data Science</span><br />AI/ML, Data Mining, 
+                  Data Visualization, Data Scraping, Statistical Analysis
+                </li>
+                <li>
+                <!-- <li>
+                  <span>Machine Learning & AI</span><br />Supervised & Unsupervised Learning, Deep Neural Networks, 
+                  Long Short-Term Memory, Dimensionality Reduction, Sequential Learning, GenAI & LLMs, 
+                  Causal Inference, Reinforcement Learning, Image Processing, PyTorch, Computer Vision
+                </li>
+                <li> -->
+                  <span>Tools & Technologies</span><br />MySQL, Git, GitHub, Docker, Fabric, Postman
+                </li>
+                <li>
+                  <span>Web Technologies</span><br />MongoDB, Express.js, React.js, Node.js, HTML, CSS, WordPress
+                </li>
+                <li><span>Environments</span><br />Linux, Ubuntu, Azure, VSCode, PyCharm, Eclipse, AWS</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Cutting Edge Visionaries (CEV), NIT Surat</span><br />Technical Head
+                </li>
+                <li>
+                  <span>Co-Curricular Affairs Council, NIT Surat</span><br />Website Development Head - MINDBEND'24
+                </li>
+                
+                <li><span>ACM, NIT Surat</span><br />Senior Executive</li>
+                
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.Tech(EE), NIT Surat , 2021-25</span><br />CGPA - 8.35
+                  
+                </li>
+                <li>
+                  <span>HSC, Navrachana Vidyani Vidyalaya, Vadodara , 2021</span
+                  ><br />93.5% in Class 12th
+                </li>
+                <li>
+                  <span>SSC, Delhi Public School, Vadodara, 2019</span
+                  ><br />92.1% in Class 10th
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="internship">
+              <ul>
+                <li>
+                  <span>Aeiota Solutions, Noida</span><br /><i>Data Science Intern</i>
+                  <br />
+                  <ul class="intern">
+                    <li>Implemented an AI-powered call transcript and summary generator with a speech recognition accuracy of 88% and a summary
+                      coherence score of 82%, extracting critical call insights for companies.</li>
+                    <li>Created 600+ banking features and designed an ML model for money-lending companies to evaluate loan eligibility based on
+                      customer banking profiles.</li>
+                    <li>Collaborated with a team of 4 on a business rule engine that enables clients to implement custom rules without coding and thus
+                      streamlines operational processes.</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Dr. Sukanta Halder, Surat</span><br /><i>Research Intern</i>
+                  <br />
+                  <ul class="intern">
+                    <li>Built a real-time machine learning model to categorize driver activities, distinguishing between safe and risky behaviors with
+                      98.75% accuracy.</li>
+                    <li>Processed 102,150 in-car images using a CNN architecture and integrated OpenCV and MediaPipe to detect driver activities and
+                      distracting facial features.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------achievements----------->
+    <div id="achievements">
+      <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+        <div class="achievements-list">
+          <div>
+            <h3>Amazon ML Summer School'24</h3>
+            <br />
+            <p>
+              Selected for Amazon ML Summer School’24 among 20,000+, receiving training in ML concepts from Applied Scientist at Amazon.
+            </p>
+          </div>
+
+          <div>
+            <h3>DotSlash 7.0</h3>
+            <br />
+            <p>
+              Achieved a top 8 position out of 500+ registrations at DotSlash 7.0, a 30-hour hackathon,
+              in partnership with DevFolio and ACM-NIT SURAT.
+            </p>
+          </div>
+
+          <div>
+            <h3>GSSoC'24 CONTRIBUTOR</h3>
+            <br />
+            <p>
+              Chosen as a contributor for GirlScript Summer of Code '24,
+              embarking on an enriching open-source journey.
+            </p>
+          </div>
+
+          <div>
+            <h3>Hack the Tank 2.0</h3>
+            <br />
+            <p>
+              Ranked top 33 out of 700+ applicants in GDSC’s Hack the Tank 2.0.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------certifications----------->
+    <div id="certifications">
+      <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+          <div class="certifications-list">
+          <div>
+          <ul>
+            <li>
+              <h3>Microsoft Learn Challenge: Azure AI & Microsoft Fabric, Microsoft</h3>
+            </li>
+            <li>
+              <h3>Completion of Data Science and Machine Learning, Coding Ninjas</h3>
+            </li>
+            <li>
+              <h3>Excellence in Data Structures, Coding Ninjas</h3>
+            </li>
+            <li>
+              <h3>Excellence in JAVA, Coding Ninjas</h3>
+            </li>
+          </ul>
+          </div>
+          </div>
+            <!-- <div class="certifications-list">
+              <div>
+              <ol>
+                <h3>LinkedIn Learning Courses</h3>
+                <li>
+                  <h4>Express Essentials: Build Powerful Web Apps with Node.js</h4>
+                </li>
+                <li>
+                  <h4>GraphQL Essential Training</h4>
+                </li>
+                <li>
+                  <h4>Java: Testing with JUnit</h4>
+                </li>
+                <li>
+                  <h4>Learning Node.js</h4>
+                </li>
+                <li>
+                  <h4>MERN Essential Training</h4>
+                </li>
+                <li>
+                  <h4>MongoDB Essential Training</h4>
+                </li>
+                <li>
+                  <h4>Node.js Essential Training</h4>
+                </li>
+                <li>
+                  <h4>WordPress Essential Training</h4>
+                </li>
+                <li>
+                  <h4>Power BI: Dashboards for Beginners</h4>
+                </li>
+              </ol>
+            </div>
+            <div>
+              <ol>
+                <h3>PluralSight Courses</h3>
+                <li>
+                  <h4>The Java Object-Oriented Approach</h4>
+                </li>
+                <li>
+                  <h4>Working with Java Data Types and String APIs</h4>
+                </li>
+                <li>
+                  <h4>Controlling Program Flow in Java</h4>
+                </li>
+                <li>
+                  <h4>Working with Streams and Lambda Expressions in Java</h4>
+                </li>
+                <li>
+                  <h4>Spring Boot Fundamentals</h4>
+                </li>
+                <li>
+                  <h4>Spring Boot 2: The Big Picture</h4>
+                </li>
+                <li>
+                  <h4>Spring Framework 2: Creating Your First Spring Boot Application</h4>
+                </li>
+              </ol>
+            </div>
+          </div> -->
+      </div>
+    </div>        
+
+    <!---------------projects---------------->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/bank_statement_analysis.png" />
+            <div class="layer">
+              <h3>Bank Statement Analysis</h3>
+              <p>
+                Developed analytical tools to extract insights from bank statements, 
+                aiming to enhance financial management and assess creditworthiness 
+                through transaction classification and behavior analysis.
+
+              </p>
+              <!-- <a href="https://github.com/adititapariya/Beach-Cleaning-Robot"
+                ><i class="fas fa-external-link-alt"></i
+              ></a> -->
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/translation.jpg" />
+            <a href="https://github.com/Vibhanshu230/Neural-Machine-Translation"
+                >
+            <div class="layer">
+              <h3>Neural Machine Translation</h3>
+              <p>
+                Developed a Neural Machine Translation model for English-to-French translation
+                using an Encoder-Decoder architecture, employing RNN/LSTM and embedding layers
+                to enhance translation accuracy. Such models bridge language barriers, enabling
+                seamless global communication.
+              </p>
+              <!-- <i class="fas fa-external-link-alt"></i -->
+              <!-- > -->
+            
+            </div>
+          </a>
+          </div>
+          <div class="work">
+            <img src="Images/Distracted_Driver.jpg" />
+            <a href="https://github.com/Vibhanshu230/DistractedDriverDetection">
+            <div class="layer">
+              <h3>Distracted Driver Detection</h3>
+              <p>
+                A Machine Learning model to categorize images of driver distractions, 
+                aiming to assess whether the driver is operating the vehicle safely or 
+                engaging in activities that could lead to accidents or harm.
+              </p>
+             <!-- <i class="fas fa-external-link-alt"></i> -->
+            
+            </div>
+          </a>
+          </div>
+        </div>
+        <div class="hidden-projects">
+          <div class="work-list">
+            
+            <div class="work">
+              <img src="Images/mb-logo-bg-black.jpg" />
+              <a href="https://mindbendsvnit.in/">
+              <div class="layer">
+                <h3>Website Development - MINDBEND’24</h3>
+                <p>
+                  A central website for MINDBEND using the MERN stack, featuring interactive
+                  pages and secure login for ambassadors. The platform enhanced event engagement
+                  and streamlined communication for participants.
+                </p>
+                
+              </div>
+            </a>
+            </div>
+            <div class="work">
+              <img src="Images/text_classification.png" />
+              <a href="https://github.com/Vibhanshu230/Text-Classification">
+              <div class="layer">
+                <h3>Text Classification</h3>
+                <p>
+                  A text classification model using the 20 Newsgroups dataset, categorizing news
+                   articles into 20 distinct topics. The model employs natural language processing
+                    techniques for effective text preprocessing and classification. 
+                </p>
+                
+                
+              </div>
+              </a>
+            </div>
+            <div class="work">
+              <img src="Images/instagram_scrapper.png" />
+              <a href="https://github.com/Vibhanshu230/InstagramBot">
+              <div class="layer">
+                <h3>InstagramBot</h3>
+                <p>
+                  Web Scrapping Instagram website using open source automated testing framework selenium.
+
+                </p>
+                
+              </div>
+            </a>
+            </div>
+          </div>
+          <div class="work-list">
+            <div class="work">
+              <img src="Images/iNote.jpg" />
+              <a href="https://github.com/Vibhanshu230/iNote-Website">
+              <div class="layer">
+                <h3>iNote Website</h3>
+                <p>
+                  Developed an iNote website using the MERN stack to help users efficiently take, store,
+                  and manage essential notes. The platform features a user-friendly interface with secure
+                  authentication, allowing easy note organization and access across devices, enhancing productivity.
+                </p>
+                
+              </div>
+            </a>
+            </div>
+            <div class="work">
+              <img src="Images/Koselig.jpg" />
+              <a href="https://github.com/Vibhanshu230/Koselig-Website">
+              <div class="layer">
+                <h3>KOSELIG WEBSITE</h3>
+                <p>
+                  Crafted an engaging Surat café website for seamless user
+                  experiences. Enhanced satisfaction with an interactive landing
+                  page, facilitating easy navigation through menu, gallery,
+                  reservation, and contact sections.
+                </p>
+                
+              </div>
+            </a>
+            </div>
+            <div class="work">
+              <img src="Images/Traffic_Light_System.jpg" />
+              <a href="https://github.com/Vibhanshu230/TLVS-TrafficLight-Verilog-System-with-Smart-Parking">
+              <div class="layer">
+                <h3>Traffic Light Verilog System with Smart Parking</h3>
+                <p>
+                  Implemented a Traffic Light Controller integrated with a 
+                  Smart Parking System using an FPGA. The system is designed to efficiently
+                  manage traffic flow and parking availability in urban environments.
+                </p>
+                
+              </div>
+            </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="show-more">
+          <button id="showMoreBtn" class="btn">See More</button>
+        </div>
+      </div>
+    </div>
+
+    <!---------------Contact---------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane"></i>
+              <a href="mailto:vibhanshubotke23@gmail.com" class="email-link"
+                >vibhanshubotke23@gmail.com</a
+              >
+            </p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/vibhanshu-botke/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/vibhanshubotke/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://x.com/VibhanshuBotke"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a href="https://github.com/Vibhanshu230"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://leetcode.com/u/vibha23703/"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1N4ZWhIPClZo4mV8cH3n8UhdMyzrjNlph/view?usp=sharing"
+              class="btn btn2"
+              >Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"> </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @Vibhanshu.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Check if hidden projects are visible initially
+        if ($(".hidden-projects").is(":visible")) {
+          $("#showMoreBtn").text("Show Less");
+        } else {
+          $("#showMoreBtn").text("Show More");
+        }
+
+        $("#showMoreBtn").on("click", function () {
+          $(".hidden-projects").slideToggle();
+          $(this).text(function (i, text) {
+            return text === "Show More" ? "Show Less" : "Show More";
+          });
+        });
+      });
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx8QsBGVmCnk3bLK3oRuDTCV-JGSwCCXsTQL387J_2LI1cW6k-i5OXxU8NlVUdfZ5q3Ig/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
