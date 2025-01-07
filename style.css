@@ -682,6 +682,9 @@ nav .fas{
     .logo{
         width:100px;
     }
+     .container{
+         padding: 10px 6%;
+     }    
     .header-text {
       margin-top:0%;
       font-size: 10px;
