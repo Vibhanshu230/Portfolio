@@ -552,6 +552,17 @@ form btn2{
       font-size: 10px;
     }
   }
+  @media only screen and (min-width: 601px) {
+    .about-col-1 .mobile-image {
+        display: block; 
+    }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
 nav .fas{
     display: none;
 }
@@ -561,10 +572,11 @@ nav .fas{
         background-image: url(Images/hero_bg_image_mobile.png);
     }
     .header-text{
-        margin-top:-32%;
+        margin-top:-5%;
         font-size: 15px;
-        align-items:normal;
-        text-align: left;
+        /* align-items:normal;
+        text-align: left; */
+        z-index: 0;
     }
     .header-text h1{
         margin-top:40%;
@@ -574,7 +586,7 @@ nav .fas{
 
     .header-text-left,
     .header-text-right {
-      width: 100%; /* Both divs take full width */
+      width: 51%; /* Both divs take full width */
       margin-bottom: 5px;
     }
     .header-text-right{
@@ -586,6 +598,7 @@ nav .fas{
     .header-text pre {
       font-size: 10px;
       margin-top: 0px;
+      
     }
   
     /* Adjust cursor font size */
@@ -663,27 +676,17 @@ nav .fas{
     }
 }
 
-@media only screen and (min-width: 601px) {
-    .about-col-1 .mobile-image {
-        display: block; 
-    }
-}
 
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
  /* For mobile devices (max width 480px) */
  @media only screen and (max-width: 480px) {
     .logo{
         width:100px;
     }
     .header-text {
-      margin-top:-32%;
+      margin-top:0%;
       font-size: 10px;
-      align-items:normal;
-      text-align: left;
+      /* align-items:normal;
+      text-align: left; */
       /* padding-left: 21px;   to align code with logo_left*/ 
     }
   
@@ -693,9 +696,10 @@ nav .fas{
   
     .header-text-left,
     .header-text-right {
-      width: 100%; /* Both divs take full width */
+      width: 53%; /* Both divs take full width */
       margin-bottom: 8px;
     }
+    
     .header-text-right{
         justify-items: left;
     }
